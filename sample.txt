@@ -1,1 +1,134 @@
 sample text of git 
+Microsoft Windows [Version 10.0.22631.4890]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\shree>git -v
+git version 2.48.1.windows.1
+
+C:\Users\shree>cd..
+
+C:\Users>cd..
+
+C:\>d:
+
+D:\>cd git
+
+D:\git>git config --global user.email "shreenithya111@gmail.com"
+
+D:\git>git config --global user.name "nithyashree3035"
+
+D:\git>git clone https://github.com/nithyashree3035/demo.git
+Cloning into 'demo'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+D:\git>cd demo
+
+D:\git\demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\git\demo>git add home.py
+
+D:\git\demo>git add .
+
+D:\git\demo>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   home.py
+
+
+D:\git\demo>git commit -m "updated home.py"
+[main a6afc51] updated home.py
+ 1 file changed, 2 insertions(+)
+
+D:\git\demo>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+D:\git\demo>git push origin main
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nithyashree3035/demo.git
+   61e02b3..a6afc51  main -> main
+
+D:\git\demo>cd..
+
+D:\git>cd demo2
+
+D:\git\demo2>git status
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\git\demo2>git init
+Initialized empty Git repository in D:/git/demo2/.git/
+
+D:\git\demo2>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\git\demo2>git add sample.txt
+
+D:\git\demo2>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   sample.txt
+
+
+D:\git\demo2>git commit -m "initiated"
+[master (root-commit) 92ac07a] initiated
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+D:\git\demo2>git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+D:\git\demo2>git remoote add origin https://github.com/nithyashree3035/new.git
+git: 'remoote' is not a git command. See 'git --help'.
+
+The most similar command is
+        remote
+
+D:\git\demo2>git remote add origin https://github.com/nithyashree3035/new.git
+
+D:\git\demo2>git branch -m
+fatal: branch name required
+
+D:\git\demo2>git branch -m "main"
+
+D:\git\demo2>git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nithyashree3035/new.git
+ * [new branch]      main -> main
+
+D:\git\demo2>
